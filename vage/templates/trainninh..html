@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <style>
+        body {
+            font-size: 1.5rem;
+            font-family: 'Kanit', sans-serif;
+        }
+
+        section {
+            padding: 50px 0;
+        }
+
+        .container,
+        .container-lg,
+        .container-md,
+        .container-sm,
+        .container-xl {
+            max-width: 1140px;
+        }
+
+        h2,
+        h3,
+        h4,
+        h5,
+        h6 {
+
+            margin-top: 0;
+            margin-bottom: .5rem;
+            font-weight: 500;
+            line-height: 1.2;
+        }
+
+        .text-secondary {
+            --bs-text-opacity: 1;
+            color: rgba(var(--bs-secondary-rgb), var(--bs-text-opacity)) !important;
+        }
+
+        .text-center {
+            text-align: center !important;
+        }
+
+        .mb-4 {
+            margin-bottom: 1.5rem !important;
+        }
+
+        p {
+            font-size: 1.5rem;
+            letter-spacing: 0.5px;
+        }
+
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6 {
+            margin-top: 0;
+            margin-bottom: .5rem;
+            font-weight: 500;
+            line-height: 1.2;
+        }
+
+        .line.center {
+            margin: auto;
+            margin-top: auto;
+            margin-bottom: auto;
+            margin-top: auto;
+            margin-bottom: auto;
+            margin-bottom: 17px;
+        }
+
+        .line {
+            -background: #e3e6ec;
+            height: 20px;
+            width: 200px;
+            -border-radius: 30px;
+            position: relative;
+            -margin-top: 10px;
+            margin-inline: auto;
+            background: url(/assets/images/line.png) no-repeat;
+            background-size: auto;
+            background-size: contain;
+            -border: 1px solid red;
+        }
+    </style>
+</head>
+
+<body>
+
+
+    <app-courses>
+        <section>
+            <div class="container">
+                <h2 class="text-center fw-bold">Full Stack Developer & UI UX Trainings for Tech Careers</h2>
+                <p class="text-center mb-4 text-secondary"> Welcome to TCP India’s comprehensive IT training programs in
+                    Mehsana designed to launch your car`eer in the IT industry. Whether you want to master UI UX Design,
+                    become a skilled Full Stack Developer, or specialize in Python Development, we have the right course
+                    for you.
+                </p>
+            </div>
+            <app-title1>
+                <div class="section-heading text-center mb-md mb-0">
+                    <h1>Our Popular Trainings</h1>
+                    <div class="line-center">
+                        ::before
+                    </div>
+                </div>
+            </app-title1>
+            <div class="container">
+                <app-course-componet>
+                    <div class="row">
+                        <div class="col-lg-3 col-sm-6 col-md-4 mb-4">
+                            <div class="course-box position-relative">
+                                <div class="course-banner-img position-relative">
+                                    <img src="https://tcpindia.in/assets/images/line.png" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </app-course-componet>
+            </div>
+        </section>
+    </app-courses>
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

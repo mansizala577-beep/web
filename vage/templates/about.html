@@ -1,0 +1,709 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <style>
+        section 
+        {
+            padding: 50px 0;
+        }
+
+        .container {
+            max-width: 1300px;
+        }
+
+       h1
+          /*[_ngcontent-serverApp-c12] */
+           {
+            font-size: 3rem;
+            font-weight: 700;
+            margin-bottom: 10px;
+        }
+        
+
+        .line_center 
+        {
+            background-image: url(https://tcpindia.in/assets/images/line.png);
+            height: 20px;
+            width: 200px;
+            background-size: 100% 100%;
+            background-repeat: repeat;
+        }
+
+        .flex-md-row
+         {
+            flex-direction: row !important;
+        }
+
+        .align-items-start 
+        {
+            align-items: flex-start !important;
+        }
+        .row {
+            --bs-gutter-x: 1.5rem;
+            --bs-gutter-y: 0;
+            display: flex;
+            flex-wrap: wrap;
+            margin-top: calc(-1 * var(--bs-gutter-y));
+            margin-right: calc(-.5 * var(--bs-gutter-x));
+            margin-left: calc(-.5 * var(--bs-gutter-x));
+        }
+
+        h2 
+        {
+            font-size: 2rem;
+        }
+
+        p {
+            margin-top: 0;
+            margin-bottom: 1rem;
+            font-size: 1.5rem;
+            letter-spacing: 0.5px;
+        }
+
+        p {
+            font-size: large;
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        element {
+            text-align: justify !important;
+        }
+
+        .mb-md-0 {
+            margin-bottom: 0 !important;
+        }
+
+        .col-md-6 {
+            flex: 0 0 auto;
+            width: 50%;
+        }
+
+        element {
+            background-color: #F3EFFF;
+        }
+
+        .addvertise.card.fc {
+            border: 1px dashed #ff2572;
+        }
+
+        .addvertise .card {
+            border-radius: 4px;
+            padding: 20px;
+            -box-shadow: 0 1px 5px rgb(209, 205, 205);
+            -border: 1px solid var(--btn-theme);
+        }
+
+        @media (min-width: 768px) {
+            .mb-md-0 {
+                margin-bottom: 0 !important;
+            }
+        }
+
+        .mb-3 {
+            margin-bottom: 1rem !important;
+        }
+
+        .h-100 {
+            height: 100% !important;
+        }
+
+        .d-block {
+            display: block !important;
+        }
+
+        .card {
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            min-width: 0;
+            word-wrap: break-word;
+            background-color: #fff;
+            background-clip: border-box;
+            border: 1px solid rgba(0, 0, 0, .125);
+            border-radius: .25rem;
+        }
+
+        .fw-bold {
+            font-weight: 700 !important;
+        }
+
+        .mb-3 {
+            margin-bottom: 1rem !important;
+        }
+
+        .addvertise .card {
+            border-radius: 4px;
+            padding: 20px;
+            -box-shadow: 0 1px 5px rgb(209, 205, 205);
+            -border: 1px solid var(--btn-theme);
+        }
+
+        .addvertise .card img {
+            float: right;
+            width: 120px;
+            margin-top: -20px;
+            -transition: linear all .5s;
+            animation-name: up-down;
+            animation-duration: 2.5s;
+            animation-iteration-count: infinite;
+        }
+
+        .text-theme 
+        {
+            color: var(--text-theme);
+        }
+
+        .fw-bold 
+        {
+            font-weight: 700 !important;
+        }
+
+        element 
+        {
+            text-align: justify;
+            hyphens: auto;
+        }
+
+        .addvertise .card p {
+            font-size: 1.5rem;
+        }
+
+        .text-secondary {
+            --bs-text-opacity: 1;
+            color: rgba(var(--bs-secondary-rgb), var(--bs-text-opacity)) !important;
+        }
+
+        p 
+        {
+            font-size: 1.5rem;
+            letter-spacing: 0.5px;
+        }
+
+        p 
+        {
+            margin-top: 0;
+            margin-bottom: 1rem;
+        }
+
+        .text-theme 
+        {
+            color: var(--text-theme);
+        }
+
+        .offers-block {
+            -border: 1px solid red;
+            background-image: url(../images/inquerybg.png);
+            -height: 250px;
+            position: relative;
+        }
+
+        .container 
+        {
+            -border: 1px solid red;
+            max-width: 1300px;
+        }
+
+        .row {
+            --bs-gutter-x: 1.5rem;
+            --bs-gutter-y: 0;
+            display: flex;
+            flex-wrap: wrap;
+            margin-top: calc(-1 * var(--bs-gutter-y));
+            margin-right: calc(-.5 * var(--bs-gutter-x));
+            margin-left: calc(-.5 * var(--bs-gutter-x));
+        }
+
+        .col-md-12 {
+            flex: 0 0 auto;
+            width: 100%;
+        }
+
+        .mt-md-4 {
+            margin-top: 1.5rem !important;
+        }
+
+        .text-center {
+            text-align: center !important;
+        }
+
+        .mb-4 {
+            margin-bottom: 1.5rem !important;
+        }
+
+        .fw-bold {
+            font-weight: 700 !important;
+        }
+
+        .mb-3 {
+            margin-bottom: 1rem !important;
+        }
+
+        .d-block {
+            display: block !important;
+        }
+
+        .offers-block[_ngcontent-serverApp-c7] h3[_ngcontent-serverApp-c7] span.small[_ngcontent-serverApp-c7] {
+            font-size: 18px;
+            letter-spacing: .4px;
+        }
+
+        .text-secondary {
+            --bs-text-opacity: 1;
+            color: rgba(var(--bs-secondary-rgb), var(--bs-text-opacity)) !important;
+        }
+
+        .text-theme {
+            color: var(--text-theme);
+        }
+
+        b,
+        strong {
+            font-weight: bolder;
+        }
+
+        .text-theme2 {
+            color: var(--text-theme2);
+        }
+
+        .text-theme2 {
+            color: var(--text-theme2);
+        }
+
+        .offers-block[_ngcontent-serverApp-c7] .news-letter-input[_ngcontent-serverApp-c7] {
+            width: 50%;
+        }
+
+        .bg-white {
+            --bs-bg-opacity: 1;
+            background-color: rgba(var(--bs-white-rgb), var(--bs-bg-opacity)) !important;
+        }
+
+        .text-end {
+            text-align: right !important;
+        }
+
+        .py-2 {
+            padding-top: .5rem !important;
+            padding-bottom: .5rem !important;
+        }
+
+        .p-3 {
+            padding: 1rem !important;
+            padding-top: 1rem;
+            padding-bottom: 1rem;
+        }
+
+        .mb-4 {
+            margin-bottom: 1.5rem !important;
+        }
+
+        .mt-3 {
+            margin-top: 1rem !important;
+        }
+
+        .mx-auto {
+            margin-right: auto !important;
+            margin-left: auto !important;
+        }
+
+        .justify-content-center {
+            justify-content: center !important;
+        }
+
+        .border {
+            border: 1px solid #dee2e6 !important;
+        }
+
+        .d-flex {
+            display: flex
+        }
+
+        .form-control-lg {
+            min-height: calc(1.5em + 1rem + 2px);
+            padding: .5rem 1rem;
+            font-size: 1.25rem;
+            border-radius: .3rem;
+        }
+
+        .form-control {
+            display: block;
+            width: 100%;
+            padding: .375rem .75rem;
+            font-size: 1rem;
+            font-weight: 400;
+            line-height: 1.5;
+            color: #212529;
+            background-color: #fff;
+            background-clip: padding-box;
+            border: 1px solid #ced4da;
+            -webkit-appearance: none;
+            -moz-appearance: none;
+            appearance: none;
+            border-radius: .25rem;
+            transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+        }
+
+        button,
+        input,
+        optgroup,
+        select,
+        textarea {
+            margin: 0;
+            font-family: inherit;
+            font-size: inherit;
+            line-height: inherit;
+        }
+
+        .btn-theme {
+            background-image: linear-gradient(90deg, #031627 -20%, #4869B1 115%);
+            transition: 0.5s;
+            border-radius: 3px;
+        }
+
+        .btn {
+            border: 0;
+        }
+
+        .text-white {
+            --bs-text-opacity: 1;
+            color: rgba(var(--bs-white-rgb), var(--bs-text-opacity)) !important;
+        }
+
+        .py-3 {
+            padding-top: 1rem !important;
+            padding-bottom: 1rem !important;
+        }
+
+        .px-4 {
+            padding-right: 1.5rem !important;
+            padding-left: 1.5rem !important;
+        }
+
+        .btn-group-lg>.btn,
+        .btn-lg {
+            padding: .5rem 1rem;
+            font-size: 1.25rem;
+            border-radius: .3rem;
+        }
+
+        .btn {
+            display: inline-block;
+            font-weight: 400;
+            line-height: 1.5;
+            color: #212529;
+            text-align: center;
+            text-decoration: none;
+            vertical-align: middle;
+            cursor: pointer;
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            user-select: none;
+            background-color: transparent;
+            border: 1px solid transparent;
+            padding: .375rem .75rem;
+            font-size: 1rem;
+            border-radius: .25rem;
+            transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+        }
+
+        [type="search"] {
+            outline-offset: -2px;
+            -webkit-appearance: textfield;
+        }
+
+        [type="button"],
+        [type="reset"],
+        [type="submit"],
+        button {
+            -webkit-appearance: button;
+        }
+
+        button,
+        select {
+            text-transform: none;
+        }
+
+        button,
+        input,
+        optgroup,
+        select,
+        textarea {
+            margin: 0;
+            font-family: inherit;
+        }
+
+        .align-items-center {
+            align-items: center !important;
+        }
+
+        .row {
+            --bs-gutter-x: 1.5rem;
+            --bs-gutter-y: 0;
+            display: flex;
+            flex-wrap: wrap;
+            margin-top: calc(-1 * var(--bs-gutter-y));
+            margin-right: calc(-.5 * var(--bs-gutter-x));
+            margin-left: calc(-.5 * var(--bs-gutter-x));
+        }
+
+        * {
+            box-sizing: border-box;
+        }
+
+        * {
+            box-sizing: border-box;
+        }
+
+        *,
+        ::after,
+        ::before {
+            box-sizing: border-box;
+        }
+
+        *,
+        ::after,
+        ::before {
+            box-sizing: border-box;
+        }
+
+        body {
+            font-size: 1.5rem;
+            font-family: 'Kanit', sans-serif;
+        }
+
+        body {
+            font-size: 1.5rem;
+            font-family: 'Kanit', sans-serif;
+        }
+
+        body {
+            font-family: var(--bs-body-font-family);
+            font-size: var(--bs-body-font-size);
+            font-weight: var(--bs-body-font-weight);
+            line-height: var(--bs-body-line-height);
+            color: var(--bs-body-color);
+            text-align: var(--bs-body-text-align);
+            -webkit-text-size-adjust: 100%;
+        }
+
+        :root {
+            --bg-primary: #4869B1;
+            --bg-secondary: #DB6B37;
+            --btn-theme: #4869B1;
+            --btn-theme2: #3E3D81;
+            --btn-theme3: #DB6B37;
+            --btn-outline-theme: #4869B1;
+            --btn-outline-theme2: #DB6B37;
+            --text-theme: #4869B1;
+            --text-theme2: #DB6B37;
+        }
+        .mansi
+        {
+            font-size: 18px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <app-about>
+        <section class="about-home">
+            <div class="container">
+                <app-titlte class="about-home">
+                    <div class="section-heading text-center mb-md-5 mb-0">
+                        <h1>About us</h1>
+                        <div class="line_center m-auto"></div>
+                    </div>
+                </app-titlte>
+
+                <div class="row flex-md-row align-item-start" style="text-align:justify">
+                    <h2 class="fw-bold text-theme ">
+                        <strong class="mansi">TCP India – A Leading IT Training Institute in Mehsana</strong>
+                    </h2>
+                    <p><strong class="mansi">
+                            Welcome to TCP India, a trusted
+                            <a href="https://tcpindia.in/" class="mansi">IT training institute in Mehsana</a>
+                            committed to delivering industry-relevant education that empowers students with the skills
+                            and
+                            confidence to excel in the tech world.
+                        </strong>
+                    </p>
+
+                    <p class="mansi">
+                        With our expert instructors and updated curriculum, we offer a variety of courses to support
+                        every
+                        stage of your IT journey, from beginners to experienced professionals seeking to upskill.
+                    </p>
+                    <p class="mansi">
+                        Whether you're starting fresh or looking to grow, our programs—including the
+                        <a href="https://tcpindia.in/course/mobile-application-developer">
+                            <strong class="mansi">Mobile Apps Development Course</strong>
+
+                        </a>
+                        ,
+                        <a href="https://tcpindia.in/course/.net-full-stack-developer">
+                            <strong class="mansi">.NET Full Stack Developer Course</strong>
+
+                        </a>
+                        , and
+                        <a href="https://tcpindia.in/course/python-full-stack-developer">
+                            <strong class="mansi">Python Full Stack Developer Course</strong>
+
+                        </a>
+                        —are designed to provide comprehensive, hands-on learning.
+                    </p>
+
+                    <p class="mansi">We stay ahead of the curve by consistently updating our syllabus to reflect the latest in
+                        technology trends. As a modern
+                        <strong class="mansi">IT training institute in Mehsana</strong>
+                        , we ensure our students receive cutting-edge education in areas like programming, networking,
+                        database management, cloud computing, cybersecurity, artificial intelligence, and more.
+                    </p>
+
+                    <p class="mansi">Our specialized training also includes the
+                        <strong class="mansi">Full Stack Web Development Course </strong>
+                        and
+                        <a href="https://tcpindia.in/course/uiux-designer">
+                            <strong class="mansi">UI/UX Design Training</strong>
+                        </a>
+                        , helping students gain practical experience through real-world projects and interactive
+                        instruction.
+                    </p>
+                    <p class="mansi"> The heart of TCP India is our team of experienced professionals. Each instructor brings years of
+                        industry experience and practical insights, ensuring students gain not just theoretical
+                        knowledge but also the applied skills that today's tech roles demand.</p>
+                    <p class="mansi">
+                        At , we foster a supportive, inclusive learning environment. Our goal is to deliver accessible,
+                        engaging, and student-friendly education that prepares you for real-world IT challenges.
+                        <a href="https://tcpindia.in/" class="mansi">TCP India</a>
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6 mb-md mb-3">
+                        <div class="card d-block fc mb-md-0 mb-3 h-100" style="background-color: #F3EFFF;">
+                            <h3 class="fw-bold mb-3">our vision</h3>
+                            <div class="div">
+                                <h3 class="text-theme fw-bold" style="-text-align: justify;">
+                                    Empowering Future Tech Leaders at the Leading IT Training Institute in Mehsana
+                                </h3>
+                                <img src="https://tcpindia.in/assets/images/vision.png" alt="vision" width="120"
+                                    class="img-fluid float-end">
+                                <p class="text-secondary" style="text-align: justify; hyphens: auto;">
+                                    at
+                                    <b>tcp india</b>
+                                    , our vision is to be the most trusted
+                                    <a href="https://tcpindia.in/" class="text-theme">
+                                        IT training institute in Mehsana,
+                                    </a>
+                                    delivering globally recognized software and IT courses that stand out for their
+                                    quality, relevance, and real-world value.
+                                </p>
+
+                                <p class="text-secondary" style="text-align: justify; hyphens: auto;">
+                                    We aim to bridge the divide between traditional academic education and the
+                                    fast-evolving demands of the IT industry. Our vision is rooted in equipping students
+                                    with hands-on experience through courses like the
+                                    <a href="https://tcpindia.in/courses" class="text-theme">
+                                        Mobile Apps Development Course
+                                    </a>
+                                    ,
+                                    <b>Python Full Stack Developer Course</b>
+                                    , and
+                                    <a href="https://tcpindia.in/courses">UI/UX Design Training</a>
+                                    , enabling them to confidently face real-world software development challenges and
+                                    lead in their careers.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="card d-block sc h-100" style="background-color: rgba(19, 205, 59, 0.08);">
+                            <h3 class="fw-bold mb-3">Our Mission</h3>
+                            <div class="div">
+                                <img src="https://tcpindia.in/assets/images/mision.png" alt="Mission"
+                                    class="img-fluid float-end me-2" width="120">
+                                <h3 class="text-theme fw-bold" style="-text-align: justify;">
+                                    Delivering Industry-Relevant IT Education for Real-World Success
+                                </h3>
+                                <p class="text-secondary" style="text-align: justify;">
+                                    At TCP India, our mission is to close the gap between theoretical learning and
+                                    industry needs by offering practical, job-ready training. As a forward-thinking
+                                    <b> IT training institute in Mehsana</b>
+                                    , we are dedicated to preparing students for high-demand roles through our
+                                    comprehensive and hands-on programs, such as the
+                                    <a href="https://tcpindia.in/courses" class="text-theme">.NET Full Stack Developer
+                                        Course</a>
+                                    ,
+                                    <b>Full Stack Web Development Course</b>
+                                    , and more.
+                                </p>
+                                <p class="text-secondary">Beyond just delivering courses, we empower students with
+                                    real-world tools, live projects, and continuous mentorship to ensure they graduate
+                                    with both technical proficiency and workplace confidence. Our commitment is to
+                                    foster future-ready professionals who can thrive in today’s dynamic tech landscape.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <app-newsletter>
+            <section class="offers-block py-5 mt-md-0 mt-5">
+                <div class="container">
+                    <div class="row align-items-center">
+                        <div class="col-md-12 h-100">
+                            <div class="mt-md-4 text-center">
+                                <h3 class="mb-4">
+                                    <span class="fw-bold d-block mb-3">
+                                        Enroll Today and Start Your Tech Career with TCP India
+                                    </span>
+                                    <span class="small text-secondary">If you’re looking to take your skills to the next
+                                        level and enter the world of technology,
+                                        <b class="text-theme">TCP India</b>
+                                        is the place to be. Join our comprehensive
+                                        <b class="text-theme2"> IT and Software Trainings</b>
+                                        today and kickstart your career with the
+                                        <b class="text-theme2">best IT training institute in Mehsana.</b>
+                                    </span>
+                                </h3>
+                                <div class="d-flex justify-content-center bg-white mt-3 p-3 py-2 border mx-auto text-end news-letter-input mb-4"
+                                    style="border-radius: 5px;">
+                                    <input type="text" class="form-control form-control-lg p-3 border-0 ">
+                                    <button class="btn btn-lg btn-theme text-white py-3 px-4">SUBSCRIBE</button>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </app-newsletter>
+
+    </app-about>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

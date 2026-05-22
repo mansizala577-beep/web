@@ -1,0 +1,37 @@
+{% extends 'shreya.html'%}
+{% block start %}
+
+<div class="right m-5">
+    <div class="card w-100">
+        <div class="card-header d-flex justify-content-between">Patient detail
+            <a href="/loginptn" class="btn btn-warning">Add</a>
+        </div>
+        <div class="card-body">
+            <table class="table table-bordered table-striped table-responsive">
+                <tr>
+                    <th>Sr. No</th>
+                    <th>Name</th>
+                    <th>Contact</th>
+                    <th>Address</th>
+                    <th>City</th>
+                    <th>Status</th>
+                    <th>Delete</th>
+                </tr>
+
+                {% for dts in datatable%}
+                <tr>
+                    <td>{{forloop.counter}}</td>
+                    <td>{{dts.pasname}}</td>
+                    <td>{{dts.pascontact}}</td>
+                    <td>{{dts.pasaddress}}</td>
+                    <td>{{dts.pascity}}</td>
+                    <td>{{dts.pasStatus}}</td>
+                    <td><a href="{% url 'delete_pts' dts.id %}"><button class="btn btn-danger">delete</button></a></td>
+                </tr>
+                {% endfor %}
+            </table>
+        </div>
+    </div>
+</div>
+
+{% endblock %}
